@@ -227,4 +227,131 @@ h2 {
 .archive-list button,
 .contact-button {
   border: 2px solid var(--navy);
-  backgro
+  background: var(--magenta);
+  color: white;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font-weight: 900;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.contact-section {
+  text-align: center;
+}
+
+.contact-section p {
+  margin: 0 auto 24px;
+}
+
+.chatbot {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 999;
+}
+
+.chatbot-button {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 3px solid var(--navy);
+  background: var(--magenta);
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.chatbot-window {
+  display: none;
+  width: 310px;
+  background: var(--bg);
+  border: 3px solid var(--navy);
+  box-shadow: 8px 8px 0 var(--magenta);
+  margin-bottom: 12px;
+}
+
+.chatbot-window.open {
+  display: block;
+}
+
+.chatbot-header {
+  background: var(--navy);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.chatbot-header button {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.chatbot-messages {
+  padding: 14px;
+}
+
+.bot-message,
+.user-message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+}
+
+.bot-message {
+  background: var(--card);
+}
+
+.user-message {
+  background: var(--magenta);
+  color: white;
+}
+
+.chatbot-options {
+  display: grid;
+  gap: 8px;
+  padding: 14px;
+}
+
+.chat-option {
+  border: 2px solid var(--navy);
+  background: white;
+  padding: 10px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 28px 7%;
+  background: var(--navy);
+  color: white;
+}
+
+@media (max-width: 850px) {
+  .theme-toggle {
+    position: static;
+    margin-bottom: 18px;
+  }
+
+  h1 { letter-spacing: -3px; }
+
+  .about-layout,
+  .card-grid,
+  .poem-grid,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .slideshow {
+    height: 320px;
+  }
+
+  .chatbot-window {
+    width: 280px;
+  }
+}
