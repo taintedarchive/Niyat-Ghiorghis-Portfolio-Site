@@ -17,3 +17,23 @@ themeToggle.addEventListener("click", () => {
 
   themeToggle.textContent = newTheme === "dark" ? "Light Mode" : "Dark Mode";
 });
+
+const slides = document.querySelectorAll(".slide");
+let currentSlide = 0;
+
+function showNextSlide() {
+  slides[currentSlide].classList.remove("active");
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add("active");
+}
+
+setInterval(showNextSlide, 3500);
+
+const navItems = document.querySelectorAll(".nav-item");
+
+navItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    navItems.forEach((nav) => nav.classList.remove("active"));
+    item.classList.add("active");
+  });
+});

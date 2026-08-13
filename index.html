@@ -1,79 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Niyat Ghiorghis | Comic Artist & Writer</title>
+  <title>The Tainted Archive</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="top-header" id="home">
+    <button class="theme-toggle" id="themeToggle">Dark Mode</button>
 
-  <header class="site-header">
-    <nav class="nav">
-      <a href="index.html" class="logo">NIYAT GHIORGHIS</a>
+    <p class="archive-label">Issue 001 · Portfolio Archive</p>
+    <h1>The Tainted Archive</h1>
 
-      <button class="menu-toggle" id="menuToggle">☰</button>
+    <p class="site-summary">
+      A fashion-comic inspired portfolio for technology, business systems, sociology,
+      art, writing, poems, and personal creative direction.
+    </p>
 
-      <div class="nav-links" id="navLinks">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="comic.html">Comic Series</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <button id="themeToggle" class="theme-btn">Dark Mode</button>
-      </div>
+    <nav class="nav-tabs">
+      <a href="#home" class="nav-item active">Home</a>
+      <a href="#about" class="nav-item">About</a>
+      <a href="#projects" class="nav-item">Projects</a>
+      <a href="#creative" class="nav-item">Art</a>
+      <a href="#poems" class="nav-item">Poems</a>
+      <a href="#archive" class="nav-item">Archive</a>
+      <a href="#resume" class="nav-item">Resume</a>
+      <a href="#contact" class="nav-item">Contact</a>
     </nav>
   </header>
 
-  <main id="main">
-    <section class="hero">
-      <div class="hero-text">
-        <p class="eyebrow">Comic artist. Writer. Worldbuilder.</p>
-        <h1>A portfolio site for the start of a comic empire.</h1>
-        <p>
-          This is the digital home for my artwork, comic concepts, character designs,
-          writing samples, and the series I’m building from the ground up.
-        </p>
-
-        <div class="hero-buttons">
-          <a href="portfolio.html" class="btn primary-btn">View Portfolio</a>
-          <a href="comic.html" class="btn secondary-btn">Explore Comic Series</a>
-        </div>
-      </div>
-
-      <div class="hero-card">
-        <p class="card-label">Featured Project</p>
-        <h2>Untitled Comic Series</h2>
-        <p>Character-driven, stylish, spiritual, intense, and emotionally sharp.</p>
+  <main>
+    <section class="slideshow-section">
+      <div class="slideshow">
+        <div class="slide active">[ insert picture here ]</div>
+        <div class="slide">[ insert picture here ]</div>
+        <div class="slide">[ insert picture here ]</div>
       </div>
     </section>
 
-    <section class="section">
-      <h2>What this site is for</h2>
-      <div class="grid three">
-        <article class="info-card">
-          <h3>Portfolio</h3>
-          <p>Finished art, digital sketches, character sheets, and comic panels.</p>
+    <section class="section about-layout" id="about">
+      <div>
+        <p class="eyebrow">About</p>
+        <h2>Multidisciplinary, not one lane.</h2>
+      </div>
+      <p>
+        I’m Niyat Ghiorghis, a Business Information Systems graduate with a Sociology minor.
+        My work combines technical thinking, cultural analysis, storytelling, visual design,
+        digital art, and creative direction.
+      </p>
+    </section>
+
+    <section class="section" id="projects">
+      <p class="eyebrow">Projects</p>
+      <h2>Tech, business & systems work.</h2>
+
+      <div class="card-grid">
+        <article class="card">
+          <span>01</span>
+          <h3>Database Work</h3>
+          <p>SQL, Oracle APEX, database redesign, structure, organization, and system improvement.</p>
         </article>
 
-        <article class="info-card">
-          <h3>Comic Archive</h3>
-          <p>A home for chapters, lore, worldbuilding, and process updates.</p>
+        <article class="card">
+          <span>02</span>
+          <h3>Analytics</h3>
+          <p>Python, Power BI, dashboards, data interpretation, and business insight projects.</p>
         </article>
 
-        <article class="info-card">
-          <h3>Creative Identity</h3>
-          <p>A visual brand that feels bold, personal, stylish, and unmistakable.</p>
+        <article class="card">
+          <span>03</span>
+          <h3>Web Design</h3>
+          <p>HTML, CSS, JavaScript, front-end layouts, portfolio design, and user-focused pages.</p>
         </article>
       </div>
     </section>
-  </main>
 
-  <footer>
-    <p>© 2026 Niyat Ghiorghis. All rights reserved.</p>
-  </footer>
+    <section class="section" id="creative">
+      <p class="eyebrow">Art</p>
+      <h2>Visual work & storytelling.</h2>
 
-  <script src="script.js"></script>
-</body>
-</html>
+      <div class="gallery-grid">
+        <div class="gallery-box">[ artwork here ]</div>
+        <div class="gallery-box">[ comic panel here ]</div>
+        <div class="gallery-box">[ character design here ]</div>
+        <div class="gallery-box">[ sketch here ]</div>
+      </div>
+    </section>
+
+    <section class="section" id="poems">
+      <p class="eyebrow">Poems</p>
+      <h2>Writing archive.</h2>
+
+      <div class="poem-grid">
+        <article class="poem-card">
+          <h3>Poem Title One</h3>
+          <p>
+            Place a short excerpt here. This can be emotional, abstract, dramatic,
+            romantic, spiritual, or whatever fits the archive.
+          </p>
+        </article>
+
+        <article class="poem-card">
+          <h3>Poem Title Two</h3>
+          <p>
+            Place another excerpt here. Later this can link to a full poem page
+            or open like an archive entry.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="archive">
+      <p class="eyebrow">Archive</p>
+      <h2>Notes, ideas & experiments.</h2>
+
+      <div class="archive-list">
+        <button>Worldbuildi
