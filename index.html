@@ -1,172 +1,210 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Tainted Archive</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The Tainted Archive | Home</title>
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <header class="top-header" id="home">
-    <button class="theme-toggle" id="themeToggle">Dark Mode</button>
 
-    <p class="archive-label">Issue 001 · Portfolio Archive</p>
+<header class="site-header">
+
+  <div class="utility-row">
+    <p>NIYAT GHIORGHIS · PORTFOLIO ARCHIVE</p>
+
+    <button class="theme-toggle" id="themeToggle">
+      DARK MODE
+    </button>
+  </div>
+
+  <div class="masthead">
     <h1>The Tainted Archive</h1>
 
     <p class="site-summary">
-      A fashion-comic inspired portfolio for technology, business systems, sociology,
-      art, writing, poems, and personal creative direction.
+      A multidisciplinary portfolio documenting technology, business systems,
+      sociology, art, writing, research, and everything created between them.
     </p>
-
-    <nav class="nav-tabs">
-      <a href="#home" class="nav-item active">Home</a>
-      <a href="#about" class="nav-item">About</a>
-      <a href="#projects" class="nav-item">Projects</a>
-      <a href="#creative" class="nav-item">Art</a>
-      <a href="#poems" class="nav-item">Poems</a>
-      <a href="#archive" class="nav-item">Archive</a>
-      <a href="#resume" class="nav-item">Resume</a>
-      <a href="#contact" class="nav-item">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="slideshow-section">
-      <div class="slideshow">
-        <div class="slide active">[ insert picture here ]</div>
-        <div class="slide">[ insert picture here ]</div>
-        <div class="slide">[ insert picture here ]</div>
-      </div>
-    </section>
-
-    <section class="section about-layout" id="about">
-      <div>
-        <p class="eyebrow">About</p>
-        <h2>Multidisciplinary, not one lane.</h2>
-      </div>
-      <p>
-        I’m Niyat Ghiorghis, a Business Information Systems graduate with a Sociology minor.
-        My work combines technical thinking, cultural analysis, storytelling, visual design,
-        digital art, and creative direction.
-      </p>
-    </section>
-
-    <section class="section" id="projects">
-      <p class="eyebrow">Projects</p>
-      <h2>Tech, business & systems work.</h2>
-
-      <div class="card-grid">
-        <article class="card">
-          <span>01</span>
-          <h3>Database Work</h3>
-          <p>SQL, Oracle APEX, database redesign, structure, organization, and system improvement.</p>
-        </article>
-
-        <article class="card">
-          <span>02</span>
-          <h3>Analytics</h3>
-          <p>Python, Power BI, dashboards, data interpretation, and business insight projects.</p>
-        </article>
-
-        <article class="card">
-          <span>03</span>
-          <h3>Web Design</h3>
-          <p>HTML, CSS, JavaScript, front-end layouts, portfolio design, and user-focused pages.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="creative">
-      <p class="eyebrow">Art</p>
-      <h2>Visual work & storytelling.</h2>
-
-      <div class="gallery-grid">
-        <div class="gallery-box">[ artwork here ]</div>
-        <div class="gallery-box">[ comic panel here ]</div>
-        <div class="gallery-box">[ character design here ]</div>
-        <div class="gallery-box">[ sketch here ]</div>
-      </div>
-    </section>
-
-    <section class="section" id="poems">
-      <p class="eyebrow">Poems</p>
-      <h2>Writing archive.</h2>
-
-      <div class="poem-grid">
-        <article class="poem-card">
-          <h3>Poem Title One</h3>
-          <p>
-            Place a short excerpt here. This can be emotional, abstract, dramatic,
-            romantic, spiritual, or whatever fits the archive.
-          </p>
-        </article>
-
-        <article class="poem-card">
-          <h3>Poem Title Two</h3>
-          <p>
-            Place another excerpt here. Later this can link to a full poem page
-            or open like an archive entry.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="archive">
-      <p class="eyebrow">Archive</p>
-      <h2>Notes, ideas & experiments.</h2>
-
-      <div class="archive-list">
-        <button>Worldbuilding</button>
-        <button>Research Notes</button>
-        <button>Fashion Inspo</button>
-        <button>Comic Concepts</button>
-        <button>Personal Essays</button>
-      </div>
-    </section>
-
-    <section class="section" id="resume">
-      <p class="eyebrow">Resume</p>
-      <h2>Professional background.</h2>
-      <p>
-        Add your resume PDF, technical skills, education, certifications, and career-focused project links here.
-      </p>
-    </section>
-
-    <section class="section contact-section" id="contact">
-      <p class="eyebrow">Contact</p>
-      <h2>Reach out.</h2>
-      <p>For professional opportunities, creative work, collaborations, or portfolio inquiries.</p>
-      <a class="contact-button" href="mailto:niyatghiorghis@gmail.com">Email Me</a>
-    </section>
-  </main>
-
-  <div class="chatbot">
-    <button class="chatbot-button" id="chatbotButton">★</button>
-
-    <div class="chatbot-window" id="chatbotWindow">
-      <div class="chatbot-header">
-        <h3>Archive Assistant</h3>
-        <button id="closeChat">×</button>
-      </div>
-
-      <div class="chatbot-messages" id="chatMessages">
-        <p class="bot-message">
-          Hey, welcome to The Tainted Archive. Would you like to do a quick wellness check or leave a suggestion for the website?
-        </p>
-      </div>
-
-      <div class="chatbot-options">
-        <button class="chat-option" data-response="wellness">Wellness Check</button>
-        <button class="chat-option" data-response="suggestion">Website Suggestion</button>
-      </div>
-    </div>
   </div>
 
-  <footer>
-    <p>© 2026 The Tainted Archive · Niyat Ghiorghis</p>
-  </footer>
+  <nav class="nav-tabs">
+    <a href="index.html" class="nav-item active">Home</a>
+    <a href="about.html" class="nav-item">About</a>
+    <a href="projects.html" class="nav-item">Projects</a>
+    <a href="art.html" class="nav-item">Art</a>
+    <a href="writing.html" class="nav-item">Writing</a>
+    <a href="archive.html" class="nav-item">Archive</a>
+    <a href="resume.html" class="nav-item">Resume</a>
+    <a href="contact.html" class="nav-item">Contact</a>
+  </nav>
 
-  <script src="script.js"></script>
+</header>
+
+
+<main>
+
+  <!-- FEATURED SLIDESHOW -->
+
+  <section class="home-feature">
+
+    <div class="feature-label">
+      <span>FEATURED ARCHIVE</span>
+      <span>VOL. 001</span>
+    </div>
+
+    <div class="slideshow">
+
+      <div class="slide active">
+        <span class="slide-number">01</span>
+        <p>[ INSERT PICTURE HERE ]</p>
+      </div>
+
+      <div class="slide">
+        <span class="slide-number">02</span>
+        <p>[ INSERT PICTURE HERE ]</p>
+      </div>
+
+      <div class="slide">
+        <span class="slide-number">03</span>
+        <p>[ INSERT PICTURE HERE ]</p>
+      </div>
+
+      <div class="slide">
+        <span class="slide-number">04</span>
+        <p>[ INSERT PICTURE HERE ]</p>
+      </div>
+
+    </div>
+
+    <div class="slide-dots" id="slideDots"></div>
+
+  </section>
+
+
+  <!-- INTRODUCTION -->
+
+  <section class="editorial-intro">
+
+    <p class="section-index">001 / INTRODUCTION</p>
+
+    <div class="editorial-intro-grid">
+
+      <h2>
+        ONE ARCHIVE.<br>
+        MANY DISCIPLINES.
+      </h2>
+
+      <div>
+        <p>
+          The Tainted Archive is a living collection of professional,
+          academic, technical, and creative work by Niyat Ghiorghis.
+        </p>
+
+        <a href="about.html" class="text-link">
+          ENTER THE ARCHIVE →
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- QUICK ENTRY POINTS -->
+
+  <section class="archive-preview">
+
+    <a href="projects.html" class="archive-preview-card">
+      <span>01</span>
+      <p>PROFESSIONAL</p>
+      <h3>Projects</h3>
+      <small>Systems · Data · Technology</small>
+    </a>
+
+    <a href="art.html" class="archive-preview-card offset-card">
+      <span>02</span>
+      <p>VISUAL</p>
+      <h3>Art</h3>
+      <small>Illustration · Comics · Concepts</small>
+    </a>
+
+    <a href="writing.html" class="archive-preview-card">
+      <span>03</span>
+      <p>WRITTEN</p>
+      <h3>Writing</h3>
+      <small>Poetry · Stories · Essays</small>
+    </a>
+
+  </section>
+
+</main>
+
+
+<!-- ARCHIVE ASSISTANT -->
+
+<div class="chatbot">
+
+  <button
+    class="chatbot-launch"
+    id="chatbotButton"
+    aria-label="Open Archive Assistant"
+  >
+    ★
+  </button>
+
+  <div class="chatbot-window" id="chatbotWindow">
+
+    <div class="chatbot-header">
+      <div>
+        <small>TAINTED ARCHIVE</small>
+        <h3>Archive Assistant</h3>
+      </div>
+
+      <button id="closeChat" aria-label="Close chat">
+        ×
+      </button>
+    </div>
+
+    <div class="chatbot-messages" id="chatMessages">
+
+      <div class="bot-message">
+        Welcome to The Tainted Archive. Want to do a quick wellness
+        check or leave some feedback about the site?
+      </div>
+
+    </div>
+
+    <div class="chatbot-options" id="chatOptions">
+
+      <button data-chat="wellness">
+        WELLNESS CHECK
+      </button>
+
+      <button data-chat="suggestion">
+        WEBSITE SUGGESTION
+      </button>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+<footer class="site-footer">
+
+  <span>THE TAINTED ARCHIVE</span>
+  <span>NIYAT GHIORGHIS</span>
+  <span>© 2026</span>
+
+</footer>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>

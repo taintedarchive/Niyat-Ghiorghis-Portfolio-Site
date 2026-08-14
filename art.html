@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The Tainted Archive | Art</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+  <div class="utility-row">
+    <p>NIYAT GHIORGHIS · PORTFOLIO ARCHIVE</p>
+    <button class="theme-toggle" id="themeToggle">DARK MODE</button>
+  </div>
+
+  <div class="masthead">
+    <h1>The Tainted Archive</h1>
+
+    <p class="site-summary">
+      A multidisciplinary portfolio documenting technology, business systems,
+      sociology, art, writing, research, and everything created between them.
+    </p>
+  </div>
+
+  <nav class="nav-tabs">
+    <a href="index.html" class="nav-item">Home</a>
+    <a href="about.html" class="nav-item">About</a>
+    <a href="projects.html" class="nav-item">Projects</a>
+    <a href="art.html" class="nav-item active">Art</a>
+    <a href="writing.html" class="nav-item">Writing</a>
+    <a href="archive.html" class="nav-item">Archive</a>
+    <a href="resume.html" class="nav-item">Resume</a>
+    <a href="contact.html" class="nav-item">Contact</a>
+  </nav>
+
+</header>
+
+
+<main class="inner-page">
+
+<section class="page-hero">
+
+  <p class="section-index">ARCHIVE FILE 03</p>
+
+  <h2>ART</h2>
+
+  <p class="page-deck">
+    Illustration, character design, comics,
+    visual development, and experiments.
+  </p>
+
+</section>
+
+
+<section class="art-section">
+
+  <div class="filter-bar">
+
+    <button class="filter-button active-filter" data-filter="all">ALL</button>
+    <button class="filter-button" data-filter="illustration">ILLUSTRATION</button>
+    <button class="filter-button" data-filter="character">CHARACTER DESIGN</button>
+    <button class="filter-button" data-filter="comic">COMICS</button>
+    <button class="filter-button" data-filter="sketch">SKETCHES</button>
+
+  </div>
+
+
+  <div class="fashion-gallery">
+
+    <article class="art-piece tall-piece" data-category="illustration">
+      <span>001</span>
+      <div>[ ARTWORK ]</div>
+      <p>Illustration Title</p>
+    </article>
+
+    <article class="art-piece" data-category="character">
+      <span>002</span>
+      <div>[ ARTWORK ]</div>
+      <p>Character Concept</p>
+    </article>
+
+    <article class="art-piece wide-piece" data-category="comic">
+      <span>003</span>
+      <div>[ COMIC PAGE ]</div>
+      <p>Comic Study</p>
+    </article>
+
+    <article class="art-piece" data-category="sketch">
+      <span>004</span>
+      <div>[ SKETCH ]</div>
+      <p>Sketch Study</p>
+    </article>
+
+    <article class="art-piece tall-piece" data-category="character">
+      <span>005</span>
+      <div>[ ARTWORK ]</div>
+      <p>Character Design</p>
+    </article>
+
+    <article class="art-piece" data-category="illustration">
+      <span>006</span>
+      <div>[ ARTWORK ]</div>
+      <p>Illustration Title</p>
+    </article>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<div class="chatbot">
+  <button class="chatbot-launch" id="chatbotButton">★</button>
+
+  <div class="chatbot-window" id="chatbotWindow">
+
+    <div class="chatbot-header">
+      <div>
+        <small>TAINTED ARCHIVE</small>
+        <h3>Archive Assistant</h3>
+      </div>
+      <button id="closeChat">×</button>
+    </div>
+
+    <div class="chatbot-messages" id="chatMessages">
+      <div class="bot-message">
+        Want to do a quick wellness check or leave some feedback about the site?
+      </div>
+    </div>
+
+    <div class="chatbot-options" id="chatOptions">
+      <button data-chat="wellness">WELLNESS CHECK</button>
+      <button data-chat="suggestion">WEBSITE SUGGESTION</button>
+    </div>
+
+  </div>
+</div>
+
+
+<footer class="site-footer">
+  <span>THE TAINTED ARCHIVE</span>
+  <span>NIYAT GHIORGHIS</span>
+  <span>© 2026</span>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
